@@ -56,7 +56,11 @@ def getMethodTwo():
         print(dtFrame['title'][ind], dtFrame['author'][ind])
     
 
-#def importCsv():
+def importCsv():
+    mydata = pd.read_csv('file/book.csv')
+    data =pd.concat([dtFrame,mydata],ignore_index=True) 
+    print(data)
+
     
 
 
